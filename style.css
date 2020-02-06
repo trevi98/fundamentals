@@ -2,6 +2,9 @@ body{
     background-color: #aaaa33;
     color:green;
 }
+img{
+    opacity:0.5;
+}
 .square{
     margin: 50px;
     width: 100px;
@@ -11,7 +14,15 @@ body{
     border-bottom: 5px solid green; */
     /* border-radius:50% ;*/
     transform: rotate(45deg);
+    /* transition: top 1s ; */
 } 
+.square:hover + .x {
+    background: linear-gradient(45deg, red 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.square:hover{
+    position: relative;
+    top:-20px;
+}
 .x{
     /* margin: 50px; */
     position: relative;
@@ -24,4 +35,5 @@ body{
     border-bottom: 5px solid green; */
     /* border-radius:50% ;*/
     /* transform: rotate(45deg); */
+    transition: background 2s linear;
 }
